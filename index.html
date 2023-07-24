@@ -97,7 +97,7 @@
         const cities = cityInput.split(",").map((city) => city.trim());
 
         try {
-          const response = await fetch("http://localhost:3000/getWeather", {
+          const response = await fetch("https://weather-api-lmks.onrender.com/getWeather", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
